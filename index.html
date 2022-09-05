@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Load stylesheets-->
+    <link rel="stylesheet" href="assets/css/bootstrap4_0_0.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <title>Lyrics Finder</title>
+</head>
+
+<body>
+    <header>
+        <div class="row navbar bg-dark max-vw">
+            <div class="col">
+                <h1 class="page-title">Lyrics Finder</h1>
+
+            </div>
+        </div>
+    </header>
+    <section>
+
+        <div class="row justify-content-center max-vw">
+            <div class="col-xs-8 col-md-6 musixmatch-logo">
+                
+            </div>
+        </div>
+
+
+
+
+
+        
+        <div class="row justify-content-center max-vw">
+            <div class="col-xs-8 col-md-4 search-box">
+                <form onsubmit="return false">
+                    <div class="form-group">
+                        <input type="search" name="q" id="search" placeholder="Enter Artist or  Song here">
+                    </div>
+                    <div class="form-group">
+                        <input type="radio" name="search" value="artist" id="artistRadioButton" checked>Artist
+                        <input type="radio" name="search" value="song" id="songRadioButton">Song
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-secondary btn-srch" onclick="checkRadio()">Search</button>
+                        <button class="btn btn-secondary btn-clear" onclick="resetPage()">Clear Results</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center max-vw">
+            <table id="back-button-container" class="table table-hover table-striped results"></table>
+        </div>
+        <div class="row justify-content-center max-vw">
+            <table id="results" class="table table-hover table-striped results">
+            </table>
+        </div>
+    </section>
+    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
